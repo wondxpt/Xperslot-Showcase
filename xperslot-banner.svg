@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="t d">
+  <title id="t">Xperslot — Scheduling that works as one system</title>
+  <desc id="d">A premium navy and teal product banner for a multi-tenant booking and scheduling platform.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071521"/><stop offset=".58" stop-color="#102D42"/><stop offset="1" stop-color="#155E63"/></linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5EEAD4"/><stop offset="1" stop-color="#67E8F9"/></linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#FFFFFF" opacity=".10"/></pattern>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#020B12" flood-opacity=".32"/></filter>
+  </defs>
+  <rect width="1200" height="330" rx="24" fill="url(#bg)"/><rect width="1200" height="330" rx="24" fill="url(#dots)"/>
+  <circle cx="1090" cy="18" r="165" fill="#5EEAD4" opacity=".08"/><circle cx="1135" cy="326" r="180" fill="#67E8F9" opacity=".08"/>
+  <g transform="translate(74 58)">
+    <rect width="54" height="54" rx="16" fill="url(#acc)"/>
+    <path d="M15 18h24v6H15zM15 29h16v6H15zM36 29h4v14h-4z" fill="#073042"/>
+    <text x="73" y="21" fill="#99F6E4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="4">BOOKING &amp; BUSINESS OPERATIONS</text>
+    <text x="73" y="53" fill="#FFFFFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26" font-weight="800" letter-spacing=".5">XPERSLOT</text>
+  </g>
+  <text x="74" y="164" fill="#FFFFFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="39" font-weight="760" letter-spacing="-1.2">Scheduling that works</text>
+  <text x="74" y="211" fill="#FFFFFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="39" font-weight="760" letter-spacing="-1.2">as one connected system.</text>
+  <text x="77" y="253" fill="#D1FAF5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16">Customer booking  ·  Business workspace  ·  Teams &amp; calendars</text>
+  <g transform="translate(798 43)" filter="url(#shadow)">
+    <rect width="327" height="239" rx="18" fill="#F8FAFC"/>
+    <rect width="327" height="42" rx="18" fill="#FFFFFF"/><rect y="25" width="327" height="17" fill="#FFFFFF"/>
+    <circle cx="21" cy="21" r="4" fill="#FCA5A5"/><circle cx="35" cy="21" r="4" fill="#FCD34D"/><circle cx="49" cy="21" r="4" fill="#6EE7B7"/>
+    <text x="70" y="25" fill="#0F172A" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="700">BUSINESS CALENDAR</text>
+    <path d="M18 62H309M18 98H309M18 134H309M18 170H309M18 206H309" stroke="#E2E8F0" stroke-width="1"/>
+    <path d="M57 54V222M112 54V222M167 54V222M222 54V222M277 54V222" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="65" y="68" width="93" height="22" rx="6" fill="#CCFBF1"/><rect x="66" y="104" width="145" height="22" rx="6" fill="#DBEAFE"/><rect x="173" y="140" width="93" height="22" rx="6" fill="#D1FAE5"/><rect x="118" y="176" width="147" height="22" rx="6" fill="#CFFAFE"/>
+    <circle cx="72" cy="79" r="3" fill="#0F766E"/><circle cx="73" cy="115" r="3" fill="#1D4ED8"/><circle cx="180" cy="151" r="3" fill="#047857"/><circle cx="125" cy="187" r="3" fill="#0E7490"/>
+  </g>
+</svg>
