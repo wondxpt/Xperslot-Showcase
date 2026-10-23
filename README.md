@@ -7,14 +7,15 @@
 </p>
 
 <p align="center">
-  <img alt="Product stage" src="https://img.shields.io/badge/Stage-Active%20Development-0F766E?style=for-the-badge" />
+  <img alt="Product stage" src="https://img.shields.io/badge/Stage-Preparing%20for%20Release-0F766E?style=for-the-badge" />
+  <img alt="Launch status" src="https://img.shields.io/badge/Public%20Launch-Coming%20Soon-5A55E0?style=for-the-badge" />
   <img alt="Web and mobile" src="https://img.shields.io/badge/Platforms-Web%20%2B%20Android-164E63?style=for-the-badge" />
   <img alt="Source" src="https://img.shields.io/badge/Application%20Source-Private-475569?style=for-the-badge" />
 </p>
 
 Xperslot is an independently developed SaaS product focused on bringing online booking and day-to-day business workflows into one connected system. The product is being built with separate customer-facing and business-facing experiences, backed by shared services and tenant-aware access rules.
 
-> **Portfolio note:** This is a public product overview, not the application source repository. The production source is maintained privately. The public branded demo link will be added after the Xperslot rebrand rollout is complete.
+> **Release update:** Xperslot is being finalized and prepared for public release. **Public launch coming soon.** This repository presents the product direction and architecture; proprietary application source remains private.
 
 ## Product direction
 
