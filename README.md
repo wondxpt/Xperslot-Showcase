@@ -65,9 +65,9 @@ The diagram is intentionally high-level. It illustrates product boundaries and c
 
 The stack supports a typed web client, a Node.js API, managed authentication and PostgreSQL data services, and a mobile delivery path. Exact implementation details and security-sensitive configuration remain in the private application repository.
 
-## Product maturity
+## Release status
 
-Xperslot is in active development. Features, integration approvals, and the public branded release are validated independently; this page should not be interpreted as a claim that every part of the product is production-ready or publicly available.
+Xperslot is being completed and prepared for public release. The public launch is coming soon. This overview describes the product direction and architecture; availability of individual features may vary as release preparation continues.
 
 ## About the maker
 
