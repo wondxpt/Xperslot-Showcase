@@ -1,54 +1,57 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/wondxpt/Xperslot-Showcase/main/xperslot-banner.svg" width="100%" alt="Xperslot — Scheduling that works as one connected system" />
+  <img src="https://raw.githubusercontent.com/wondxpt/Xperslot-Showcase/main/xperslot-banner.svg" width="100%" alt="XperSlot — Scheduling that works as one connected system." />
 </p>
 
 <p align="center">
-  <strong>A multi-tenant booking and business-operations platform designed around two clear experiences: Business and Customer.</strong>
+  <strong>A multi-tenant service-booking and business-operations platform delivered through two dedicated apps: Customer and Business.</strong>
 </p>
 
 <p align="center">
-  <img alt="Product stage" src="https://img.shields.io/badge/Stage-Preparing%20for%20Release-0F766E?style=for-the-badge" />
-  <img alt="Launch status" src="https://img.shields.io/badge/Public%20Launch-Coming%20Soon-5A55E0?style=for-the-badge" />
-  <img alt="Web and mobile" src="https://img.shields.io/badge/Platforms-Web%20%2B%20Android-164E63?style=for-the-badge" />
-  <img alt="Source" src="https://img.shields.io/badge/Application%20Source-Private-475569?style=for-the-badge" />
+  <img alt="Product stage" src="https://img.shields.io/badge/Stage-Release%20Preparation-0F766E?style=for-the-badge" />
+  <img alt="Public launch" src="https://img.shields.io/badge/Public%20Launch-Coming%20Soon-5A55E0?style=for-the-badge" />
+  <img alt="Platforms" src="https://img.shields.io/badge/Platforms-Web%20%2B%20Android-164E63?style=for-the-badge" />
+  <img alt="Application source" src="https://img.shields.io/badge/Application%20Source-Private-475569?style=for-the-badge" />
 </p>
 
-Xperslot is an independently developed SaaS product focused on bringing online booking and day-to-day business workflows into one connected system. The product is being built with separate customer-facing and business-facing experiences, backed by shared services and tenant-aware access rules.
+XperSlot is an independently developed SaaS product for online service discovery, appointment booking, and day-to-day business workflows. Its current product structure consists of **two separate applications**, supported by shared services and tenant-aware access rules—not a single role-switching app.
 
-> **Release update:** Xperslot is being finalized and prepared for public release. **Public launch coming soon.** This repository presents the product direction and architecture; proprietary application source remains private.
+**Official links:** [Android apps and release status](https://github.com/wondxpt/XperSlot-Downloads) · [Developer profile](https://github.com/wondxpt)
 
-## Product direction
+> **Release status — 11 November 2026:** The public download hub is being prepared for the current two-app product. No incomplete or older single-app build is offered as the current XperSlot product. APK downloads will be announced only after the exact Customer and Business binaries, signing continuity, and upgrade path have been verified.
 
-Xperslot is designed to make the full journey easier to manage—from finding a service and choosing an available time to running the schedule and maintaining customer relationships.
+## The two XperSlot apps
 
-| Customer experience | Business experience |
+| XperSlot Customer | XperSlot Business |
 | --- | --- |
-| Discover businesses and services | Configure services, staff, and availability |
-| Explore available appointment times | View and manage the booking calendar |
-| Create and manage bookings | Maintain client and booking information |
-| Keep communication connected to the booking journey | Handle client conversations and team communication |
-| See a clear experience across devices | Coordinate daily work in a dedicated workspace |
+| Discover service businesses and professionals | Configure business details and service catalogue |
+| Explore categories, profiles, portfolios, and reviews | Manage availability, working hours, and booking rules |
+| Choose services and book appointments | Work with calendars, appointments, and waitlists |
+| Keep upcoming and past bookings organised | Organise staff, shifts, time off, resources, and commissions |
+| Save favourites and contact providers | Maintain client records and customer communication |
+| Manage a personal profile and booking journey | Access business operations such as checkout, inventory, reviews, and reporting where enabled |
 
-The two experiences are separate product surfaces rather than a single interface with a role switch.
+Feature access can vary by account role, workspace configuration, and connected services. These are product-scope descriptions, not a claim that every listed capability is generally available or fully validated in the current public release.
+
+## Why two apps?
+
+Customers and service businesses have different goals and information needs. XperSlot separates the customer discovery-and-booking journey from the business workspace while connecting them through shared booking and account services. This keeps each app focused and avoids forcing both audiences into one role-switching interface.
+
+## Conceptual architecture
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/wondxpt/Xperslot-Showcase/main/architecture.svg" width="100%" alt="Conceptual XperSlot architecture: separate customer and business experiences connect through application APIs to booking, client, messaging, integration, identity, and data services." />
+</p>
+
+The diagram shows product boundaries and responsibilities at a high level. It is **not** a deployment topology, a complete security design, or a guarantee that every integration is enabled in production.
 
 ## Engineering focus
 
-The product work emphasizes complete, testable workflows—not just static screens.
-
-- **Multi-tenant boundaries:** isolate business data and verify membership and permissions at the API and data layers.
-- **Scheduling correctness:** keep service duration, staff availability, and appointment changes consistent through booking workflows.
-- **Communication flows:** connect client conversations and internal team communication to the appropriate permissions and records.
-- **Calendar integrations:** support an explicit authorization flow and keep external calendar events aligned with booking changes.
-- **Cross-platform UX:** keep web and mobile interactions coherent, including localization and right-to-left layouts where needed.
-- **Operational reliability:** make errors observable and validate user journeys across the interface, API, and persistence layers.
-
-## High-level architecture
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/wondxpt/Xperslot-Showcase/main/architecture.svg" width="100%" alt="Conceptual Xperslot product architecture diagram" />
-</p>
-
-The diagram is intentionally high-level. It illustrates product boundaries and core responsibilities; it is not a deployment map, a complete threat model, or a promise that every capability is generally available today.
+- **Multi-tenant boundaries:** keep business data isolated and validate membership and permissions at the API and data layers.
+- **Scheduling correctness:** keep service duration, staff availability, and appointment state consistent through booking workflows.
+- **Communication flows:** connect customer conversations and internal team communication to the correct records and permissions.
+- **Calendar integrations:** use explicit authorization and keep external events aligned with booking changes.
+- **Cross-platform UX:** maintain coherent web and mobile behavior, including localization and right-to-left layouts.
+- **Operational reliability:** make failures observable and validate journeys across the interface, API, and persistence layers.
 
 ## Technology
 
@@ -63,18 +66,27 @@ The diagram is intentionally high-level. It illustrates product boundaries and c
   <img alt="OAuth" src="https://img.shields.io/badge/OAuth-18181B?style=flat-square&logo=openid&logoColor=white" />
 </p>
 
-The stack supports a typed web client, a Node.js API, managed authentication and PostgreSQL data services, and a mobile delivery path. Exact implementation details and security-sensitive configuration remain in the private application repository.
+The intended stack supports typed web clients, Node.js APIs, managed authentication, PostgreSQL data services, and Android delivery. Exact implementation details and security-sensitive configuration remain in the private application repository.
 
-## Release status
+## Release readiness
 
-Xperslot is being completed and prepared for public release. The public launch is coming soon. This overview describes the product direction and architecture; availability of individual features may vary as release preparation continues.
+The public download hub tracks the release process separately from this product overview. A public APK release will be announced only after both current apps have passed the required checks:
+
+1. Both Customer and Business APKs are attached to the same published release and GitHub reports each asset as fully uploaded.
+2. Package IDs, app labels, version names, version codes, and minimum Android version are checked against the actual binaries.
+3. SHA-256 checksums are published and verified against the downloadable files.
+4. The signing certificate and in-place upgrade path are verified against previously distributed builds.
+5. Fresh installation and update behavior are smoke-tested on physical Android devices without asking users to risk existing app data.
+6. Sign-in, customer booking, business calendar, and backend-connected workflows are checked before release claims are made.
+
+See [RELEASE_STATUS.md](https://github.com/wondxpt/XperSlot-Downloads/blob/main/RELEASE_STATUS.md) for the public status. Until those gates are cleared, the release remains **coming soon**.
 
 ## About the maker
 
-Built by [Abbas Shiri](https://github.com/wondxpt), a full-stack developer focused on web and mobile products, SaaS architecture, and end-to-end workflows.
+Built by [Abbas Shiri](https://github.com/wondxpt), a developer focused on web and mobile products, SaaS architecture, and end-to-end workflows.
 
 Also see [ResuMetrics](https://github.com/wondxpt/ResuMetrics), a separate resume/CV builder project.
 
 ---
 
-<p align="center"><sub>Xperslot · Product overview · Proprietary source maintained privately</sub></p>
+<p align="center"><sub>XperSlot · Product overview · Proprietary application source maintained privately</sub></p>
