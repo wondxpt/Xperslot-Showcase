@@ -89,7 +89,7 @@ The diagram explains product boundaries and responsibilities at a high level. It
 | XperSlot Customer | 2.1.1 | 14 | `com.reservio.customer` | 7.0 / API 24 |
 | XperSlot Business | 2.9.5 | 28 | `com.reservio.business` | 7.0 / API 24 |
 
-The current candidates use release certificate SHA-256 `5E40400F42768141989602625D157D91C22D0031253D4A766DF2264982874DA2`. Certain earlier test installations use a different certificate, so Android will reject an in-place update from those installations. Do not uninstall existing apps or treat these candidates as compatible updates.
+The current candidates use release certificate SHA-256 `5E40400F42768141989602625D157D91C22D0031253D4A766DF2264982874DA2`. This is intended as the first public distribution for new XperSlot users; install the appropriate app as a clean installation. Some private developer test builds use a different certificate and cannot be updated in place. Do not uninstall a private test build just to force an update.
 
 See the [release status and verification record](https://github.com/wondxpt/XperSlot-Downloads/blob/main/RELEASE_STATUS.md) and [GitHub Releases](https://github.com/wondxpt/XperSlot-Downloads/releases). A draft page is not a download; only completed APK attachments on a published prerelease provide downloads.
 
