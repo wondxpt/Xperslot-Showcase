@@ -82,7 +82,7 @@ The diagram explains product boundaries and responsibilities at a high level. It
 
 ## Android release status
 
-**11 November 2026 — Preview release validation.** The Customer and Business release APKs have been checked locally for package metadata, SHA-256 integrity, and APK Signature Scheme v2. A GitHub prerelease draft (tag: `xperslot-android-preview-2026.11.11`) exists, but its two APK attachments are not yet confirmed as complete. **There are no public APK downloads until both assets are uploaded and verified.**
+**11 November 2026 — Preview release validation.** Customer 2.1.1 has been uploaded to the GitHub prerelease draft and its exact size and SHA-256 digest are confirmed by GitHub. Business 2.9.5 is still uploading. **There are no public APK downloads until both assets are complete, verified, and the prerelease is published.**
 
 | App | Candidate version | Version code | Android package | Minimum Android |
 |---|---:|---:|---|---:|
