@@ -82,11 +82,16 @@ The diagram explains product boundaries and responsibilities at a high level. It
 
 ## Android release status
 
-**11 November 2026 — Preview validation in progress.** Local Customer and Business release APKs have verified package metadata, SHA-256 checksums, and APK Signature Scheme v2 signatures. A GitHub prerelease draft is being prepared, but its APK assets are not yet confirmed as fully uploaded. **There are no public APK downloads at this time.**
+**11 November 2026 — Preview release validation.** The Customer and Business release APKs have been checked locally for package metadata, SHA-256 integrity, and APK Signature Scheme v2. A GitHub prerelease draft (tag: `xperslot-android-preview-2026.11.11`) exists, but its two APK attachments are not yet confirmed as complete. **There are no public APK downloads until both assets are uploaded and verified.**
 
-The current candidates are Customer 2.1 (code 13) and Business 2.9.4 (code 27). They are signed with a release certificate that differs from the certificate on certain earlier test installations. Android will reject an in-place update from those installations. Do not uninstall existing apps or treat these candidates as compatible updates.
+| App | Candidate version | Version code | Android package | Minimum Android |
+|---|---:|---:|---|---:|
+| XperSlot Customer | 2.1 | 13 | `com.reservio.customer` | 7.0 / API 24 |
+| XperSlot Business | 2.9.4 | 27 | `com.reservio.business` | 7.0 / API 24 |
 
-See the [release status and verification record](https://github.com/wondxpt/XperSlot-Downloads/blob/main/RELEASE_STATUS.md) and [published releases](https://github.com/wondxpt/XperSlot-Downloads/releases). Only a release with both completed APK attachments is a public download.
+The candidates use release certificate SHA-256 `5E40400F42768141989602625D157D91C22D0031253D4A766DF2264982874DA2`. Certain earlier test installations use a different certificate, so Android will reject an in-place update from those installations. Do not uninstall existing apps or treat these candidates as compatible updates.
+
+See the [release status and verification record](https://github.com/wondxpt/XperSlot-Downloads/blob/main/RELEASE_STATUS.md) and [GitHub Releases](https://github.com/wondxpt/XperSlot-Downloads/releases). A draft page is not a download; only completed APK attachments on a published prerelease provide downloads.
 
 ## About the maker
 
